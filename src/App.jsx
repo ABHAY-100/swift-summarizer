@@ -1,27 +1,17 @@
-import AuthLayout from './_auth/AuthLayout.jsx';
-import SigninForm from './_auth/forms/SigninForm.jsx';
-import SignupForm from './_auth/forms/SignupForm.jsx';
-import RootLayout from './_root/RootLayout.jsx';
-
+import { SignedIn, SignedOut, SignIn } from "@clerk/clerk-react";
+import Dashboard from "./_root/Dashboard";
 import './App.css';
-import './index.css'
-
-import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <main className="w-screen h-screen">
-      <Routes>
-        {/* Public Routes */}
-        <Route element={<AuthLayout />}>
-          <Route path='/sign-in' element={<SigninForm />}/>
-          <Route path='/sign-up' element={<SignupForm />}/>
-        </Route>
-
-        {/* Private Routes */}
-        <Route index element={< RootLayout/>} />
-      </Routes>
-    </main>
+    <header className="flex items-center justify-center h-screen">
+      <SignedOut>
+        <SignIn />
+      </SignedOut>
+      <SignedIn>
+        <Dashboard />
+      </SignedIn>
+    </header>
   )
 }
 
