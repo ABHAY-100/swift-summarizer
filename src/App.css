@@ -72,7 +72,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flex flex-col items-center justify-center px-6 mx-auto max-w-7xl sm:px-16;
 }
 
 .black_btn {
@@ -84,15 +84,15 @@
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply text-transparent bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text;
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+  @apply max-w-2xl mt-5 text-lg text-center text-gray-600 sm:text-xl;
 }
 
 .url_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
 }
 
 .submit_btn {
@@ -100,7 +100,7 @@
 }
 
 .link_card {
-  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+  @apply flex flex-row items-center justify-start gap-3 p-3 bg-white border border-gray-200 rounded-lg cursor-pointer;
 }
 
 .copy_btn {
@@ -108,7 +108,7 @@
 }
 
 .blue_gradient {
-  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  @apply font-black text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text;
 }
 
 .summary_box {

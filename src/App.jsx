@@ -1,19 +1,26 @@
-import Hero from './components/Hero.jsx';
-import Demo from './components/Demo.jsx';
+import AuthLayout from './_auth/AuthLayout.jsx';
+import SigninForm from './_auth/forms/SigninForm.jsx';
+import SignupForm from './_auth/forms/SignupForm.jsx';
+import RootLayout from './_root/RootLayout.jsx';
 
 import './App.css';
+import './index.css'
+
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <main>
-      <div className="main">
-        <div className="gradient"></div>
-      </div>
+    <main className="w-screen h-screen">
+      <Routes>
+        {/* Public Routes */}
+        <Route element={<AuthLayout />}>
+          <Route path='/sign-in' element={<SigninForm />}/>
+          <Route path='/sign-up' element={<SignupForm />}/>
+        </Route>
 
-      <div className="app">
-        <Hero />
-        <Demo /> 
-      </div>
+        {/* Private Routes */}
+        <Route index element={< RootLayout/>} />
+      </Routes>
     </main>
   )
 }

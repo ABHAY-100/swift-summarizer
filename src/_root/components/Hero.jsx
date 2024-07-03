@@ -1,4 +1,4 @@
-import { logo } from '../assets';
+import { logo } from '../../../public/assets';
 
 const Hero = () => {
   return (
