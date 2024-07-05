@@ -6,6 +6,8 @@ import {
 import { Routes, Route, useNavigate } from "react-router-dom";
 import App from "./App.jsx";
 
+import { dark } from "@clerk/themes";
+
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 if (!PUBLISHABLE_KEY) {
@@ -17,6 +19,7 @@ const ClerkWithRoutes = () => {
 
   return (
     <ClerkProvider
+      appearance={{baseTheme: dark,}}
       publishableKey={PUBLISHABLE_KEY}
       navigate={(to) => navigate(to)}
     >
