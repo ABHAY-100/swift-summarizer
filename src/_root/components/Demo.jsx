@@ -61,10 +61,10 @@ const Demo = () => {
   };
 
   return (
-    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[370px]">
+    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[370px] max-[375px]:scale-75">
       {/* Search */}
       <form
-        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[410px]"
+        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[370px]"
         onSubmit={handleSubmit}
       >
         <input
