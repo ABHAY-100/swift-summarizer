@@ -61,7 +61,7 @@ const Demo = () => {
   };
 
   return (
-    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px]">
+    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px] md:scale-75 lg:scale-100 sm:scale-[0.65] max-sm:scale-[0.3]">
       {/* Search */}
       <form
         className="relative flex items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1"
@@ -107,7 +107,7 @@ const Demo = () => {
                 />
               </div>
             </div>
-            <p className="font-goia_regular text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6">
+            <p className="font-goia_regular text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6 cursor-default">
               {item.url}
             </p>
           </div>
