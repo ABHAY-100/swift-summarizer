@@ -64,7 +64,7 @@ const Demo = () => {
     <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[370px] max-[375px]:scale-75 max-[375px]:pt-[100px] max-[375px]:pb-[30px]">
       {/* Search */}
       <form
-        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[370px]"
+        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[370px] max-md:rounded-[24px]"
         onSubmit={handleSubmit}
       >
         <input
