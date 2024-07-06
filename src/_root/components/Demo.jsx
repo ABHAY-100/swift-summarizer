@@ -64,7 +64,7 @@ const Demo = () => {
     <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px]">
       {/* Search */}
       <form
-        className="relative flex items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px]"
+        className="relative flex items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1"
         onSubmit={handleSubmit}
       >
         <input
@@ -74,11 +74,11 @@ const Demo = () => {
           onChange={(e) => setArticle({ ...article, url: e.target.value })}
           onKeyDown={handleKeyDown}
           required
-          className="w-full text-xl url_input peer font-goia_regular pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
+          className="w-full h-full text-xl url_input peer font-goia_regular pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
         />
         <button
           type="submit"
-          className="submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 "
+          className="h-full submit_btn peer-focus:border-gray-700 peer-focus:text-gray-70 rounded-r-[32px] hover:bg-pastel_green-hover ease-linear duration-200"
         >
           <p className="h-full w-[85px] flex justify-center items-center">
             <img
@@ -96,10 +96,10 @@ const Demo = () => {
           <div
             key={`link-${index}`}
             onClick={() => setArticle(item)}
-            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-custom-bg opacity-80"
+            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-custom-bg opacity-80 hover:bg-pastel_green-hover"
           >
-            <div className="copy_btn" onClick={() => handleCopy(item.url)}>
-              <div className="flex items-center justify-center w-[75px] h-[64px]">
+            <div className="rounded-l-[21px] copy_btn hover:bg-custom-bg-2 ease-in-out" onClick={() => handleCopy(item.url)}>
+              <div className="flex items-center justify-center w-[75px] h-[64px] cursor-pointer">
                 <img
                   src={copied === item.url ? tick : copy}
                   alt={copied === item.url ? "tick_icon" : "copy_icon"}
