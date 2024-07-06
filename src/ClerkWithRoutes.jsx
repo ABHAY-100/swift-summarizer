@@ -1,11 +1,6 @@
-import {
-  ClerkProvider,
-  SignIn,
-  SignUp,
-} from "@clerk/clerk-react";
+import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import App from "./App.jsx";
-
 import { dark } from "@clerk/themes";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
