@@ -64,7 +64,7 @@ const Demo = () => {
     <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px]">
       {/* Search */}
       <form
-        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px]"
+        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px]"
         onSubmit={handleSubmit}
       >
         <input
@@ -78,7 +78,7 @@ const Demo = () => {
         />
         <button
           type="submit"
-          className="h-full submit_btn peer-focus:border-gray-700 peer-focus:text-gray-70 rounded-r-[32px] hover:bg-pastel_green-hover ease-linear duration-200"
+          className="h-full submit_btn peer-focus:border-gray-700 peer-focus:text-gray-70 rounded-r-[32px] hover:bg-pastel_green-hover ease-linear duration-200 max-md:scale-95"
         >
           <p className="h-full w-[85px] flex justify-center items-center">
             <img
@@ -91,12 +91,12 @@ const Demo = () => {
       </form>
 
       {/* Browse History */}
-      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px] max-lg:w-[650px]">
+      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px] max-lg:w-[650px] max-md:w-[550px]">
         {allArticles.reverse().map((item, index) => (
           <div
             key={`link-${index}`}
             onClick={() => setArticle(item)}
-            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-custom-bg opacity-80 hover:bg-pastel_green-hover"
+            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-custom-bg opacity-80 hover:bg-pastel_green-hover max-md:h-[72px]"
           >
             <div className="rounded-l-[21px] copy_btn hover:bg-custom-bg-2 ease-in-out" onClick={() => handleCopy(item.url)}>
               <div className="flex items-center justify-center w-[75px] h-[64px] cursor-pointer">
@@ -107,7 +107,7 @@ const Demo = () => {
                 />
               </div>
             </div>
-            <p className="font-goia_regular text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6 cursor-default">
+            <p className="font-goia_regular text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6 cursor-default max-md:text-lg">
               {item.url}
             </p>
           </div>
@@ -116,7 +116,7 @@ const Demo = () => {
 
       {/* Display Result */}
       {(isFetching || error || article.summary) && (
-        <div className="flex items-center justify-center w-[800px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black">
+        <div className="flex items-center justify-center w-[800px] max-md:w-[550px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black">
           {isFetching ? (
             <img
               src={loader}
@@ -134,9 +134,9 @@ const Demo = () => {
           ) : (
             article.summary && (
               <div className="flex flex-col gap-3">
-                <h2 className="text-xl font-bold">Article Summary</h2>
+                <h2 className="text-xl font-bold max-md:text-lg">Article Summary</h2>
                 <div className="summary_box">
-                  <p className="font-normal text-[17.85px]">{article.summary}</p>
+                  <p className="font-normal text-[17.85px] max-md:text-base">{article.summary}</p>
                 </div>
               </div>
             )
