@@ -61,10 +61,10 @@ const Demo = () => {
   };
 
   return (
-    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px] md:scale-75 lg:scale-100 sm:scale-[0.65] max-sm:scale-[0.3]">
+    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px]">
       {/* Search */}
       <form
-        className="relative flex items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1"
+        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px]"
         onSubmit={handleSubmit}
       >
         <input
@@ -74,7 +74,7 @@ const Demo = () => {
           onChange={(e) => setArticle({ ...article, url: e.target.value })}
           onKeyDown={handleKeyDown}
           required
-          className="w-full h-full text-xl url_input peer font-goia_regular pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
+          className="w-full h-full url_input peer font-goia_regular pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
         />
         <button
           type="submit"
@@ -91,7 +91,7 @@ const Demo = () => {
       </form>
 
       {/* Browse History */}
-      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px]">
+      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px] max-lg:w-[650px]">
         {allArticles.reverse().map((item, index) => (
           <div
             key={`link-${index}`}
@@ -116,7 +116,7 @@ const Demo = () => {
 
       {/* Display Result */}
       {(isFetching || error || article.summary) && (
-        <div className="flex items-center justify-center w-[800px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black">
+        <div className="flex items-center justify-center w-[800px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black">
           {isFetching ? (
             <img
               src={loader}
