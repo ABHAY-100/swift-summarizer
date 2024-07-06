@@ -61,7 +61,7 @@ const Demo = () => {
   };
 
   return (
-    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[270px]">
+    <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[370px]">
       {/* Search */}
       <form
         className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[410px]"
@@ -91,7 +91,7 @@ const Demo = () => {
       </form>
 
       {/* Browse History */}
-      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px] max-lg:w-[650px] max-md:w-[550px] max-sm:w-[410px]">
+      <div className="flex flex-col gap-[8px] overflow-y-auto w-[800px] max-lg:w-[650px] max-md:w-[550px] max-sm:w-[370px]">
         {allArticles.reverse().map((item, index) => (
           <div
             key={`link-${index}`}
@@ -116,7 +116,7 @@ const Demo = () => {
 
       {/* Display Result */}
       {(isFetching || error || article.summary) && (
-        <div className="flex items-center justify-center w-[800px] max-md:w-[550px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black max-sm:w-[410px]">
+        <div className="flex items-center justify-center w-[800px] max-md:w-[550px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black max-sm:w-[370px]">
           {isFetching ? (
             <img
               src={loader}
