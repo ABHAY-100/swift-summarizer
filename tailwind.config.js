@@ -5,25 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      'pastel_green': '#e3fbae',
-      'near_black': '#14141a',
-      'slate_gray': '#282834',
-      'white': '#ffffff',
-
-
-      'custom-bg': 'rgba(40, 40, 52, 0.28)',
-      'custom-bg-1': 'rgba(40, 40, 52, 0.12)',
-      'custom-bg-2': 'rgba(40, 40, 52, 0.45)',
-      
-
-      'pastel_green-hover': 'rgba(40, 40, 52, 0.4)',
+    extend: {
+      colors: {
+        'like-yellow': '#e3fbae',
+        'near-black': '#14141a',
+        'just-gray': '#282834',
+  
+        'shadow-gray': 'rgba(40, 40, 52, 0.28)',
+        'shadow-gray-light': 'rgba(40, 40, 52, 0.12)',
+        'shadow-gray-dark': 'rgba(40, 40, 52, 0.45)',
+        'subtle-shadow-gray': 'rgba(40, 40, 52, 0.4)',
+      },
+      fontFamily: {
+        'goia-display': ['goia-display', 'sans-serif'],
+        'goia': ['goia', 'sans-serif'],
+      },
     },
-    fontFamily: {
-      goia_display_regular: ['goia_display_regular', 'sans-serif'],
-      goia_regular: ['goia_regular', 'sans-serif'],
-    },
-    extend: {},
   },
   plugins: [],
 }

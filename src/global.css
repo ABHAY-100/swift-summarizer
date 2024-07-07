@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'goia-display';
+  src: url('./assets/fonts/GoiaDisplay-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'goia';
+  src: url('./assets/fonts/Goia-Regular.otf') format('opentype');
+}
+
+@layer base {
+  body {
+    @apply text-white bg-near-black;
+  }
+}

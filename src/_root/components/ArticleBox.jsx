@@ -1,10 +1,8 @@
-/* eslint-disable no-undef */
 import { useState, useEffect } from "react";
-
-import { copy, loader, tick, send } from "../../../public/assets";
+import { copy, loader, tick, send } from "../../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
 
-const Demo = () => {
+const ArticleBox = () => {
   const [article, setArticle] = useState({
     url: "",
     summary: "",
@@ -64,7 +62,7 @@ const Demo = () => {
     <section className="flex min-h-lvh gap-[24px] flex-col items-center py-[370px] max-[375px]:scale-75 max-[375px]:pt-[100px] max-[375px]:pb-[30px]">
       {/* Search */}
       <form
-        className="relative flex text-xl items-center justify-between border-2 border-pastel_green opacity-80 w-[800px] h-[80px] rounded-[32px] bg-custom-bg-1 max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[370px] max-md:rounded-[24px]"
+        className="relative flex text-xl items-center justify-between border-2 border-like-yellow opacity-80 w-[800px] h-[80px] rounded-[32px] bg-shadow-gray-light max-lg:w-[650px] max-md:text-lg max-md:h-[72px] max-md:w-[550px] max-sm:w-[370px] max-md:rounded-[24px]"
         onSubmit={handleSubmit}
       >
         <input
@@ -74,11 +72,11 @@ const Demo = () => {
           onChange={(e) => setArticle({ ...article, url: e.target.value })}
           onKeyDown={handleKeyDown}
           required
-          className="w-full h-full url_input peer font-goia_regular pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
+          className="w-full h-full text-white bg-transparent border-none url_input peer font-goia pl-7 focus:outline-none" // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
         />
         <button
           type="submit"
-          className="h-full submit_btn peer-focus:border-gray-700 peer-focus:text-gray-70 rounded-r-[32px] hover:bg-pastel_green-hover ease-linear duration-200 max-md:scale-95"
+          className="h-full submit_btn peer-focus:border-gray-700 peer-focus:text-gray-70 rounded-r-[32px] hover:bg-subtle-shadow-gray ease-linear duration-200 max-md:scale-95"
         >
           <p className="h-full w-[85px] flex justify-center items-center">
             <img
@@ -96,9 +94,9 @@ const Demo = () => {
           <div
             key={`link-${index}`}
             onClick={() => setArticle(item)}
-            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-custom-bg opacity-80 hover:bg-pastel_green-hover max-md:h-[72px]"
+            className="max-w-[800px] flex justify-between items-center gap-[8px] rounded-[21px] h-[64px] bg-shadow-gray opacity-80 hover:bg-subtle-shadow-gray max-md:h-[72px]"
           >
-            <div className="rounded-l-[21px] copy_btn hover:bg-custom-bg-2 ease-in-out" onClick={() => handleCopy(item.url)}>
+            <div className="rounded-l-[21px] copy_btn hover:bg-shadow-gray-dark ease-in-out" onClick={() => handleCopy(item.url)}>
               <div className="flex items-center justify-center w-[75px] h-[64px] cursor-pointer">
                 <img
                   src={copied === item.url ? tick : copy}
@@ -107,7 +105,7 @@ const Demo = () => {
                 />
               </div>
             </div>
-            <p className="font-goia_regular text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6 cursor-default max-md:text-lg">
+            <p className="font-goia text-[19.4px] text-white w-[715px] whitespace-nowrap overflow-hidden mr-6 cursor-default max-md:text-lg">
               {item.url}
             </p>
           </div>
@@ -116,7 +114,7 @@ const Demo = () => {
 
       {/* Display Result */}
       {(isFetching || error || article.summary) && (
-        <div className="flex items-center justify-center w-[800px] max-md:w-[550px] max-lg:w-[650px] bg-pastel_green opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia_regular text-near_black max-sm:w-[370px]">
+        <div className="flex items-center justify-center w-[800px] max-md:w-[550px] max-lg:w-[650px] bg-like-yellow opacity-80 rounded-[21px] py-[22px] px-[27px] font-goia text-near-black max-sm:w-[370px]">
           {isFetching ? (
             <img
               src={loader}
@@ -147,4 +145,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default ArticleBox;
