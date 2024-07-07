@@ -91,3 +91,22 @@ npm run dev
 4. Click the "Send"  button.
 5. The application will display a concise summary of the article.
 
+## Contributing
+
+We welcome contributions! Report bugs/request features via issues. Submit code changes as pull requests following project style (if any). Let's improve Swift Summarizer together! 
+
+## Acknowledgments
+
+- Thanks to the [creator](https://www.youtube.com/@javascriptmastery) of the YouTube tutorial that inspired this project.
+- Gratitude to Rapid API for providing the Article Extractor and Summarizer service.
+- Thanks to Clerk for the user authentication solution.
+
+## Contact Information
+
+**Questions?**
+
+- Issues: Report bugs/request features
+- Email: abhaybalakrishnan884@gmail.com
+
+<br />
+Thank you for your interest! 🤝
