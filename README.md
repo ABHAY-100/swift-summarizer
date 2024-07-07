@@ -1,23 +1,8 @@
+> **Swift Summarizer (WIP)** ️ - This project is under active development, and we're constantly improving its capabilities and adding exciting new features! Stay tuned for updates.
+
 # Swift Summarizer
 
-<p align="center">
-  <img src="https://i.postimg.cc/tJ6Qz0dQ/thumbnail.png" alt="Swift Summarizer Banner" width="100%">
-</p>
-<div align="center">
-  
-  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-  ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-  ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-  ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-  ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-  ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-  
-</div>
-
-## Overview
-
-Swift Summarizer is a powerful web application that leverages AI to provide quick and accurate summaries of articles from any given URL. With a sleek, minimalist interface, it offers users an efficient way to digest long-form content in seconds.
+This web application uses AI to quickly create concise summaries of articles from any URL. Paste a link, click a button, and get the gist of the content instantly. This approach keeps the description clear, concise, and focuses on the core functionality: summarizing articles quickly and efficiently.
 
 **Key features:**
 - Instant article summarization
@@ -25,7 +10,6 @@ Swift Summarizer is a powerful web application that leverages AI to provide quic
 - Secure authentication system
 - History tracking for easy access to past summaries
 
-<br />
 
 ## Technologies Used
 
@@ -36,7 +20,6 @@ Swift Summarizer is a powerful web application that leverages AI to provide quic
 - Clerk: User authentication platform
 - Rapid API: Article Extractor and Summarizer
 
-<br />
 
 ## Getting Started
 
@@ -95,7 +78,9 @@ npm run dev
 4. Click the "Send"  button.
 5. The application will display a concise summary of the article.
 
-<br />
+##  API Reference
+
+abt the api
 
 ## Contributing
 
@@ -104,7 +89,9 @@ We welcome contributions to improve Swift Summarizer! To contribute, please foll
 - Report bugs or request features by opening an [issue](https://github.com/ABHAY-100/swift-summarizer/issues).
 - Submit code changes as pull requests following the project's code style.
 
-<br />
+## Acknowledgments
+
+I'm thrilled to express my gratitude to those who supported me throughout this project. It's been an incredible journey this summer, diving headfirst into the world of frontend development and bringing this project to life. The experience has been both challenging and rewarding, and I'm grateful for the guidance and support that helped me along the way.
 
 ## Contact Information
 
