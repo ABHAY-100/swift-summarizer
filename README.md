@@ -1,3 +1,3 @@
 <img src="public/assets/_thumbnail.png" alt="Swift Summarizer Banner" />
 
-> **Swift Summarizer (WIP)** ️ - This project is under active development, and we're constantly improving its capabilities and adding exciting new features! Stay tuned for updates.
+> **Swift Summarizer (WIP):** I'm actively developing this project, adding new features and improvements! Expect updates soon.
