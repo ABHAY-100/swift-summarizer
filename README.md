@@ -15,15 +15,17 @@
   
 </div>
 
-## About
+## Overview
 
 Swift Summarizer is a powerful web application that leverages AI to provide quick and accurate summaries of articles from any given URL. With a sleek, minimalist interface, it offers users an efficient way to digest long-form content in seconds.
 
-Key features:
+**Key features:**
 - Instant article summarization
 - Clean, user-friendly interface
 - Secure authentication system
 - History tracking for easy access to past summaries
+
+<br />
 
 ## Technologies Used
 
@@ -33,6 +35,8 @@ Key features:
 - Redux Toolkit: State management library for complex applications
 - Clerk: User authentication platform
 - Rapid API: Article Extractor and Summarizer
+
+<br />
 
 ## Getting Started
 
@@ -91,22 +95,23 @@ npm run dev
 4. Click the "Send"  button.
 5. The application will display a concise summary of the article.
 
+<br />
+
 ## Contributing
 
-We welcome contributions! Report bugs/request features via issues. Submit code changes as pull requests following project style (if any). Let's improve Swift Summarizer together! 
+We welcome contributions to improve Swift Summarizer! To contribute, please follow these guidelines:
 
-## Acknowledgments
+- Report bugs or request features by opening an [issue](https://github.com/ABHAY-100/swift-summarizer/issues).
+- Submit code changes as pull requests following the project's code style.
 
-- Thanks to the [creator](https://www.youtube.com/@javascriptmastery) of the YouTube tutorial that inspired this project.
-- Gratitude to Rapid API for providing the Article Extractor and Summarizer service.
-- Thanks to Clerk for the user authentication solution.
+<br />
 
 ## Contact Information
 
-**Questions?**
+**Have questions or suggestions?**
 
-- Issues: Report bugs/request features
-- Email: abhaybalakrishnan884@gmail.com
+- Feel free to contact us via email: abhaybalakrishnan884@gmail.com
+- Connect with me on [LinkedIn](https://in.linkedin.com/in/abhaybalakrishnan)
 
 <br />
-Thank you for your interest! 🤝
+We value your feedback and contributions! If you find Swift Summarizer useful, please consider starring the repository (★) on GitHub to show your support. Let's build something great together with Swift Summarizer.
