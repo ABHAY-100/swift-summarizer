@@ -32,4 +32,62 @@ Key features:
 - Tailwind CSS: Utility-first CSS framework for rapid styling
 - Redux Toolkit: State management library for complex applications
 - Clerk: User authentication platform
-- Rapid API: (mention the specific Rapid API used for summarization)
+- Rapid API: Article Extractor and Summarizer
+
+## Getting Started
+
+**Prerequisites:**
+
+- Git: A version control system for tracking changes in code. You can download it from https://git-scm.com/downloads.
+- Node.js (version 14 or later): https://nodejs.org/en
+
+<br />
+
+**Installation:**
+
+1. Clone the repository:
+```bash
+  git clone https://github.com/ABHAY-100/swift-summarizer.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd swift-summarizer
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+<br />
+
+**Setting Environment Variables:**
+
+1. Create a file named ``` .env.local ``` in the project root directory.
+   
+> ***Important:*** *exclude this file from version control using ``` .gitignore ```*
+
+2. Inside the ``` .env.local ``` file, add the following environment variable, replacing ``` <YOUR_API_KEY> ```  with your actual Rapid API key for the chosen summarization service:
+```env
+VITE_RAPID_API_ARTICLE_KEY=<YOUR_API_KEY>
+VITE_CLERK_PUBLISHABLE_KEY=<YOUR_API_KEY>
+```
+
+> ***Important:*** *Never commit your API key to a public repository.*
+
+> ***Note:*** *You can obtain your API keys from their respective websites: [Rapid API](https://rapidapi.com) and [Clerk](https://clerk.dev/).*
+
+<br />
+
+**Usage:**
+
+1. Start the development server:
+```bash
+npm run dev
+```
+2. Open http://localhost:3000 in your browser.
+3. Paste the URL of the article you want to summarize in the input field.
+4. Click the "Send"  button.
+5. The application will display a concise summary of the article.
+
