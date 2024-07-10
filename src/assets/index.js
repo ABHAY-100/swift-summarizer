@@ -3,8 +3,8 @@ import copy from './icons/copy.svg'
 import logo from './logos/logo.svg'
 import tick from './icons/tick.svg'
 import send from './icons/send.svg'
-import alert_cirlce from './icons/alert-circle-outline.svg'
 import start_loader from './loader/start-loader.svg'
+import github_logo from './icons/github.svg'
 
 export {
     loader,
@@ -12,6 +12,6 @@ export {
     logo,
     tick,
     send,
-    alert_cirlce,
     start_loader,
+    github_logo,
 }
