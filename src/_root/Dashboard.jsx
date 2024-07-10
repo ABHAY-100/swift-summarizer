@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar';
 import ArticleBox from './components/ArticleBox';
 
-const RootLayout = () => {
+const Dashboard = () => {
   return (
     <main className="w-screen h-screen">
       <div className="app">
@@ -12,4 +12,4 @@ const RootLayout = () => {
   )
 }
 
-export default RootLayout;
+export default Dashboard;
