@@ -20,11 +20,11 @@ const ClerkWithRoutes = () => {
     >
       <Routes>
         <Route
-          path="/sign-in"
+          path="/sign-in/*"
           element={<SignInPage />}
         />
         <Route
-          path="/sign-up"
+          path="/sign-up/*"
           element={<SignUpPage />}
         />
         <Route 

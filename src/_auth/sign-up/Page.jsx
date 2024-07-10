@@ -8,7 +8,7 @@ export default function Page() {
         routing="path" 
         forceRedirectUrl={"/"}
         signInUrl="/sign-in"
-    />
+      />
     </div>
   )  
 }
