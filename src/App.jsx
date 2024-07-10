@@ -5,7 +5,6 @@ import Dashboard from "./_root/Dashboard";
 import { useEffect, useState } from "react";
 import { start_loader } from './assets'
 import { useNavigate } from 'react-router-dom';
-
 import SignInPage from "./_auth/sign-in/Page";
 
 const App = () => {
@@ -27,7 +26,7 @@ const App = () => {
   if (loading) {
     return (
       <header className="flex items-center justify-center h-screen">
-        <img src={start_loader} className="flex items-center justify-center object-contain w-20 h-20" alt=""/>
+        <img src={start_loader} className="flex items-center justify-center object-contain w-20 h-20" alt="loading"/>
       </header>
     );
   }
