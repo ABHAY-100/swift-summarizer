@@ -16,7 +16,7 @@ const App = () => {
     const timer = setTimeout(() => {
       setLoading(false);
       if (isLoaded && !isSignedIn) {
-        navigate('/sign-in');
+        navigate('/home');
       }
     }, 2000);
 

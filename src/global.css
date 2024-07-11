@@ -12,6 +12,11 @@
   src: url('./assets/fonts/Goia-Regular.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'goia-medium';
+  src: url('./assets/fonts/Goia-Medium.otf') format('opentype');
+}
+
 @layer base {
   body {
     @apply text-white bg-near-black;

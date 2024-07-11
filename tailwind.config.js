@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         'goia-display': ['goia-display', 'sans-serif'],
         'goia': ['goia', 'sans-serif'],
+        'goia-medium': ['goia-medium', 'sans-serif'],
       },
     },
   },

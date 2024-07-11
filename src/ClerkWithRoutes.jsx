@@ -4,6 +4,7 @@ import { dark } from "@clerk/themes";
 import App from "./App.jsx";
 import SignInPage from "./_auth/sign-in/Page.jsx";
 import SignUpPage from "./_auth/sign-up/Page.jsx";
+import Home from "./_root/pages/Home.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -29,6 +30,10 @@ const ClerkWithRoutes = () => {
         <Route 
           path="/" 
           element={<App />} 
+        />
+        <Route 
+          path="/home"
+          element={<Home />}
         />
       </Routes>
     </ClerkProvider>
