@@ -22,12 +22,3 @@
     @apply text-white bg-near-black;
   }
 }
-
-#gradient-canvas {
-  width:100%;
-  height:100%;
-  --gradient-color-1: #14141a; 
-  --gradient-color-2: #282834; 
-  --gradient-color-3: #282834;  
-  --gradient-color-4: #434A32;
-}
