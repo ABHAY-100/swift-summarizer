@@ -5,7 +5,7 @@ import NavBar from '../components/SpecialNavBar'
 const Home = () => {
   const navigate = useNavigate();
   const SummarizeNowButton = () => {
-    navigate('/sign-in');
+    navigate('/sign-up');
   };
     
   return (

@@ -1,4 +1,4 @@
-import { logo, github_logo } from "../../assets";
+import { logo, home } from "../../assets";
 import { UserButton } from "@clerk/clerk-react";
 
 const Hero = () => {
@@ -11,9 +11,9 @@ const Hero = () => {
         </a>
         
         <div className="flex items-center justify-center gap-5">
-          <a href="https://github.com/ABHAY-100/swift-summarizer" target="_blank" rel="noopener noreferrer" className="text-[16.3px] font-goia flex justify-center items-center gap-[9px] bg-shadow-gray px-3 py-2 rounded-[12px] hover:bg-just-gray cursor-pointer">
-            <img src={github_logo} alt="alert cirlce icon" className="w-[23px] h-[23px] opacity-80 cursor-pointer" />
-            <span className="max-md:hidden">View on GitHub</span>
+          <a href="/home" className="text-[16.3px] font-goia flex justify-center items-center gap-[9px] bg-shadow-gray px-3 py-2 rounded-[12px] hover:bg-just-gray cursor-pointer">
+            <img src={home} alt="alert cirlce icon" className="w-[22px] h-[22px] opacity-80 cursor-pointer" />
+            <span className="max-md:hidden">Go to Home</span>
           </a>
           <UserButton 
             appearance={{

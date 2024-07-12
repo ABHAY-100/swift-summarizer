@@ -5,6 +5,7 @@ import tick from './icons/tick.svg'
 import send from './icons/send.svg'
 import start_loader from './loader/start-loader.svg'
 import github_logo from './icons/github.svg'
+import home from './icons/home.svg'
 
 import hamburger from './icons/hamburger.svg'
 
@@ -17,4 +18,5 @@ export {
     start_loader,
     github_logo,
     hamburger,
+    home,
 }
