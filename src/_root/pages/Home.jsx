@@ -1,24 +1,31 @@
 import { useNavigate } from "react-router";
-import { logo, hamburger } from "../../assets";
+// import { logo, hamburger } from "../../assets";
+import Nav from '../components/Nav'
+import { NextUIProvider } from "@nextui-org/react";
+
+import { Gradient } from '../components/Gradient'
 
 const Home = () => {
   const navigate = useNavigate();
   const SummarizeNowButton = () => {
     navigate('/sign-in');
   };
+
+
+  const gradient = new Gradient()
+  gradient.initGradient('#gradient-canvas')
+
+  // const bodyBg = document.querySelector('#root');
+    // bodyBg.style.backgroundColor = '#17171D'
+    // bodyBg.style.backdropFilter = 'blur(100px)'
     
   return (
-    <section className="relative flex flex-col justify-center h-screen">
-        <nav className="absolute z-10 flex items-center justify-between w-full py-6 lg:h-24 top-bar px-11 bg-near-black max-md:px-6 max-md:h-[80px] top-0 border-b-2 border-just-gray">
-            <a href="https://swift-summarizer.vercel.app/" className="flex flex-row items-start justify-between gap-4">
-                <img src={logo} alt="swift_summarizer_logo" className="w-10 max-md:w-8" />
-                <h4 className="text-[27px] font-goia-display text-like-yellow max-md:hidden">Swift Summarizer</h4>
-            </a>
-            
-            <div className="flex items-center justify-center gap-5">
-                <img src={hamburger} alt="alert cirlce icon" className="cursor-pointer opacity-80 w-fit h-fit" />
-            </div>
-        </nav>
+    <>
+    {/* <canvas id="gradient-canvas" data-js-darken-top data-transition-in className="absolute top-0 left-0 blur-[5px]" /> */}
+    <section className="relative flex flex-col justify-center h-screen mx-auto bg-near-black">
+        <NextUIProvider>
+            <Nav/>
+        </NextUIProvider>
 
         <div className="inline-flex flex-col items-center justify-center max-w-full gap-8 max-[480px]:scale-95">
             <div className="w-full h-fit flex-col justify-start items-center gap-[22px] flex">
@@ -39,6 +46,7 @@ const Home = () => {
             <h5 className="text-like-yellow text-[17px] font-normal font-goia w-fit max-md:text-[14.5px]">© 2024 Swift Summarizer - MIT License</h5>
         </footer>
     </section>
+    </>
   )
 }
 
