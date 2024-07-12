@@ -33,7 +33,7 @@ import {logo} from '../../assets'
           className="scale-110"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
-        <NavbarMenu className="md:mt-[30px] ease-linear bg-[#17171D] font-goia justify-center items-center mx-auto max-md:mt-[14px]"
+        <NavbarMenu className="md:mt-[30px] ease-linear bg-[#17171D] font-goia justify-center items-center mx-auto max-md:mt-[14px] border-t-2 border-just-gray"
         style={{ height: '400px' }}>
           <NavbarMenuItem>
             <Link href="https://msahalkc.netlify.app" className="text-3xl text-like-yellow">
