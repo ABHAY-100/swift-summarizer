@@ -17,7 +17,7 @@ import {logo} from '../../assets'
     return (
       <NextUINavbar maxWidth={'full'}
         onMenuOpenChange={setIsMenuOpen}
-        className="absolute z-10 flex items-center justify-between py-6 lg:h-24 top-bar px-5 bg-near-black max-md:px-6 max-md:h-[80px] top-0 md:h-[96px] border-b-2 border-just-gray"
+        className="absolute z-10 flex items-center justify-between py-6 lg:h-24 top-bar px-5 bg-near-black max-md:px-1 max-md:h-[80px] top-0 md:h-[96px] border-b-2 border-just-gray"
         style={{ maxWidth: 'none' }}
       >
         <NavbarContent className="relative h-full">
