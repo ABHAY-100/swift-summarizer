@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <>
-      <header className="flex items-center justify-center h-screen">
+      <header className="flex items-center justify-center">
         <SignedOut>
           <SignInPage />
         </SignedOut>
