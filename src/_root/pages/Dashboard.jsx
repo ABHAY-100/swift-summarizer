@@ -1,5 +1,5 @@
-import NavBar from './components/NavBar';
-import ArticleBox from './components/ArticleBox';
+import NavBar from '../components/NavBar';
+import ArticleBox from '../components/ArticleBox';
 
 const Dashboard = () => {
   return (

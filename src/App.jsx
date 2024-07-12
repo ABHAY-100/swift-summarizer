@@ -1,7 +1,7 @@
 import { SignedIn, SignedOut, useUser } from "@clerk/clerk-react";
 import { Analytics } from "@vercel/analytics/react"
 import './global.css';
-import Dashboard from "./_root/Dashboard";
+import Dashboard from "./_root/pages/Dashboard";
 import { useEffect, useState } from "react";
 import { start_loader } from './assets'
 import { useNavigate } from 'react-router-dom';

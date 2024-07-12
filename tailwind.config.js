@@ -12,6 +12,8 @@ export default {
         'like-yellow': '#e3fbae',
         'near-black': '#14141a',
         'just-gray': '#282834',
+
+        'like-yellow-light': 'rgba(227, 251, 174, 0.96)',
   
         'shadow-gray': 'rgba(40, 40, 52, 0.28)',
         'shadow-gray-light': 'rgba(40, 40, 52, 0.12)',
